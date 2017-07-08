@@ -539,7 +539,7 @@ parts:
                 -no-sql-sqlite2 \
                 -plugin-sql-tds \
                 -system-sqlite \
-                -platform linux-g++-64 \
+                -platform linux-clang \
                 -system-harfbuzz \
                 -system-zlib \
                 -system-libpng \
@@ -571,6 +571,7 @@ parts:
         plugin: nil
         # From deb packaging build deps
         build-packages:
+            - clang
             - g++
             - freetds-dev
             - gdb
